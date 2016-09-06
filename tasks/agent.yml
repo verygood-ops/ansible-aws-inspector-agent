@@ -8,3 +8,6 @@
 - name: run installer
   command: bash /tmp/aws-inspector-agent-install
   notify: restart awsagent
+
+- name: run awsagent on boot
+  service: name=awsagent state=started enabled=yes

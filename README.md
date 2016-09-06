@@ -1,5 +1,7 @@
 # Ansible AWS Inspector Agent Role
 
+[![CircleCI](https://circleci.com/gh/verygood-ops/ansible-aws-inspector-agent.svg?style=svg)](https://circleci.com/gh/verygood-ops/ansible-aws-inspector-agent)
+
 Installs the [AWS Inspector Agent](http://docs.aws.amazon.com/inspector/latest/userguide/inspector_introduction.html).
 
 ### Requirements
