@@ -11,4 +11,4 @@ dependencies:
 test:
   override:
     - ansible-playbook -i tests/hosts -c local tests/all.yml --syntax-check
-    - ansible-playbook -i tests/hosts -c local tests/all.yml
+    - ansible-playbook -i tests/hosts -c local tests/all.yml -e ansible_ec2_placement_region=us-west-2
