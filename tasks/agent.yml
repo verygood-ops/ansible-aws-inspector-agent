@@ -7,3 +7,4 @@
 
 - name: run installer
   command: bash /tmp/aws-inspector-agent-install
+  notify: restart awsagent
