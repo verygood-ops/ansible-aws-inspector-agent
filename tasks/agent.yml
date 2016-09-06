@@ -5,8 +5,11 @@
     url: "{{ install_script_url }}"
     dest: "/tmp/aws-inspector-agent-install"
 
+- name: collect facts
+  action: ec2_facts
+
 - name: run installer
-  command: bash /tmp/aws-inspector-agent-install
+  command: bash /tmp/aws-inspector-agent-install -r {{ansible_ec2_placement_region}}
   notify: restart awsagent
 
 - name: run awsagent on boot
