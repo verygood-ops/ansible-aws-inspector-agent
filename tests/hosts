@@ -1,2 +1,3 @@
 [test_runners]
-localhost
+dev-ossec
+

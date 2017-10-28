@@ -9,7 +9,7 @@
   action: ec2_facts
 
 - name: run installer
-  command: bash /tmp/aws-inspector-agent-install -r {{ansible_ec2_placement_region}}
+  command: bash /tmp/aws-inspector-agent-install -u false
   notify: restart awsagent
 
 - name: run awsagent on boot
