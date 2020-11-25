@@ -2,6 +2,5 @@
 
 - hosts: test_runners
   become: yes
-
   roles:
     - { role: ansible-aws-inspector-agent }
