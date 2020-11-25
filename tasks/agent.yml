@@ -6,10 +6,10 @@
     dest: "/tmp/aws-inspector-agent-install"
 
 - name: collect facts
-  action: ec2_facts
+  action: ec2_metadata_facts
 
 - name: run installer
-  command: bash /tmp/aws-inspector-agent-install -u false 
+  command: bash /tmp/aws-inspector-agent-install -u false
   notify: restart awsagent
 
 - name: run awsagent on boot
