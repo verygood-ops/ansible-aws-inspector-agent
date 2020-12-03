@@ -8,9 +8,6 @@ provisioner:
   playbook: tests/default.yml
   hosts: all
   ansible_verbose: true
-  ansible_version: 2.4.0.0
-  require_ansible_omnibus: false
-  require_ansible_repo: true
   #idempotency_test true
 
 platforms:
