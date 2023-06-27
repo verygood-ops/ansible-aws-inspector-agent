@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     machine:
-      enabled: true
+      image: ubuntu-2004:2023.04.2 # Same as the Ansible playbooks tested version
     environment:
       AWS_DEFAULT_REGION: us-west-2
     steps:
