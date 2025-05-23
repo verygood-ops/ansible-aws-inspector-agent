@@ -1,3 +1,2 @@
 ---
-
-- include: agent.yml
+- import_tasks: agent.yml
